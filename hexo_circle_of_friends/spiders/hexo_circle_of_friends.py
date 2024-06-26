@@ -67,7 +67,7 @@ class FriendpageLinkSpider(scrapy.Spider):
         if self.settings["GITHUB_FRIENDS_LINKS"]["enable"]:
             # 修改爬虫爬取github过于频繁问题（msg:[start error]）https://github.com/Rock-Candy-Tea/hexo-circle-of-friends/issues/132
             # for number in range(1, 100):
-            for number in range(1, 10):
+            for number in range(1, 20):
                 domain = 'https://github.com'
                 dic = self.settings["GITHUB_FRIENDS_LINKS"]
                 url = domain + "/" + dic["owner"] + "/" + dic["repo"] + "/issues?page=" + str(number) + '&q=is%3A' + dic[
