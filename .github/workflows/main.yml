@@ -45,8 +45,8 @@ jobs:
         python-version: 3.8
 
     # 限定pip版本 解决部署报错问题
-    - name: Install old pip version
-      run: pip install --upgrade 'pip<=24.1'
+    #- name: Install old pip version
+    #  run: pip install --upgrade 'pip<24.1'
 
     - name: Install requirements
       working-directory: ./hexo_circle_of_friends
